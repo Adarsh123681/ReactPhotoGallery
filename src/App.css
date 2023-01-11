@@ -1,0 +1,138 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+html{
+  font-size: 62.5%;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(168, 229, 243) 0%, rgb(14, 165, 235) 100%);
+  background-size: 100vw 100vh;
+} 
+.head {
+  font-size: 3rem;
+  padding: 1rem;
+  color: rgb(255, 42, 0);
+  font-family: monaco;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.span {
+  font-size: 2rem;
+  color: rgb(3, 52, 250);
+  font-family: monospace;
+  text-align: center;
+}
+.likhna {
+  width: 100vw;
+  height: 10rem;
+  transition: all .2s ease-in-out;
+  display: grid;
+  place-items: center;
+}
+input {
+  width: 20rem;
+  height: 5rem;
+  border: .2rem solid black;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-family: monospace
+} 
+.btn {
+  width: 10rem;
+  height: 4rem;
+  margin-top: 1rem;
+  border-radius: .6rem;
+  background-color: rgb(17, 78, 234);
+  border-color: whitesmoke;
+  border: .1rem solid black;
+  font: 3rem;
+  letter-spacing: .2rem;
+  transition: all .2s ease-in-out;
+  color: antiquewhite;
+}
+.btn:hover {
+  background-color: rgb(164, 195, 233);
+  transform: scale(.7, .7);
+}
+.mapDiv {
+  float: left;
+  position: relative;
+   margin: 2rem 0rem 1rem 14rem;
+  box-shadow: 1rem 2rem 8rem  black;
+  border: .1rem solid white;
+  border-radius: 1.5rem;
+}
+.pics {
+  width:20vw;
+  height: 20vw;
+  border: .1rem solid white;
+  border-radius: 1.5rem;
+  transition: all .2s ease-in-out;
+
+} 
+.content {
+  text-align: center;
+  transition: all .2s ease-in-out;
+  font: 2rem bold;
+  color: rgb(24, 22, 3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.mapDiv:hover .content {
+  opacity: 1;
+}  
+.mapDiv:hover .pics {
+  opacity: 0.5;
+
+} 
+@media screen and (max-width:480px){ 
+  .container {
+    width:100vw;
+      background: linear-gradient(to right, rgb(168, 243, 199) 0%, rgb(14, 235, 176) 100%);
+  }
+  .head {
+      font-size: 2rem;
+    } 
+  .span {
+      font-size: 1.5rem;
+  } 
+  input {
+    
+      width: 15rem;
+      height: 5rem;
+      font-size: 1.5rem;
+  } 
+  .likhna {
+      width: 100vh;
+      height: 10rem;
+  
+  } 
+  .btn {
+      width: 7rem;
+      height: 3.5rem;
+      margin: 1rem 0rem 0rem 0.5rem;
+      font: 2.5rem;
+  }
+  .mapDiv {
+      margin: 4rem;
+  }
+  .pics {
+     margin-left: 1rem;
+      width: 25rem;
+      height:25rem;
+  }
+  .content {
+      font: 1.5rem bold;
+  }
+}
+
+@media  screen and (min-width:480) {
+   
+}
